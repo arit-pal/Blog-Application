@@ -1,0 +1,81 @@
+/* src/main/resources/static/css/style.css */
+body {
+    font-family: sans-serif;
+    margin: 20px;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+/* Hide/Show sections */
+#welcome-section, #login-section, #user-view-section, #admin-view-section {
+    border: 1px solid #eee;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+/* Styling for individual blog items in Admin view */
+.admin-blog-item {
+     border: 1px solid #ccc;
+     padding: 10px;
+     margin-bottom: 15px;
+     border-radius: 5px;
+     background-color: #f9f9f9;
+ }
+
+.admin-blog-item h4 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #0056b3;
+}
+
+.admin-blog-item button {
+    margin-right: 8px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+form div {
+    margin-bottom: 12px;
+}
+
+label {
+    display: inline-block;
+    width: 100px; /* Adjust as needed */
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+textarea {
+    width: calc(100% - 110px); /* Adjust based on label width */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+.message {
+    color: green;
+    font-weight: bold;
+}

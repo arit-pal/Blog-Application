@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Basic Blogs</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<h1>Blog Application</h1>
+
+<div id="welcome-section">
+    <h2>Welcome to the Blog</h2>
+    <p id="welcome-message">Loading welcome message...</p>
+    <button id="show-login-button">Show Login</button>
+</div>
+
+<div id="login-section" style="display:none;">
+    <h2>Login</h2>
+    <form id="login-form">
+        <div>
+            <label for="username">Username:</label>
+            <input id="username" required type="text" value="momo"></div>
+        <div>
+            <label for="password">Password:</label>
+            <input id="password" required type="password" value="Ex1stence"></div>
+        <button type="submit">Login</button>
+    </form>
+    <p class="error" id="login-error" style="display:none;"></p>
+</div>
+
+<div id="user-view-section" style="display:none;">
+    <h2>User View - Single Blog</h2>
+    <div id="user-blog-display">
+        <p>Loading blog...</p>
+    </div>
+    <button id="next-blog-button" style="display:none;">Next Blog &raquo;</button>
+    <p id="no-more-blogs" style="display:none; font-weight: bold;">No more blogs to display.</p>
+    <button id="logout-button-user">Logout</button>
+</div>
+
+<div id="admin-view-section" style="display:none;">
+    <h2>Admin View</h2>
+    <div class="message" id="message-area" style="display:none;"></div>
+    <h3>Create New Blog</h3>
+    <form id="admin-create-blog-form">
+        <div>
+            <label for="admin-create-author">Author:</label>
+            <input id="admin-create-author" required type="text">
+        </div>
+        <div>
+            <label for="admin-create-title">Title:</label>
+            <input id="admin-create-title" required type="text">
+        </div>
+        <div>
+            <label for="admin-create-content">Content:</label>
+            <textarea id="admin-create-content" required rows="4"></textarea>
+        </div>
+        <button type="submit">Create Blog</button>
+    </form>
+
+    <hr>
+
+    <h3>All Blogs</h3>
+    <div id="admin-blogs-list">
+        <p>Loading blogs...</p>
+    </div>
+
+    <div id="admin-edit-blog-section" style="display:none;">
+        <h3>Edit Blog</h3>
+        <form id="admin-edit-blog-form">
+            <input id="admin-edit-blog-id" type="hidden">
+            <div>
+                <label for="admin-edit-author">Author:</label>
+                <input id="admin-edit-author" required type="text">
+            </div>
+            <div>
+                <label for="admin-edit-title">Title:</label>
+                <input id="admin-edit-title" required type="text">
+            </div>
+            <div>
+                <label for="admin-edit-content">Content:</label>
+                <textarea id="admin-edit-content" required rows="4"></textarea>
+            </div>
+            <button type="submit">Update Blog</button>
+            <button id="admin-cancel-edit" type="button">Cancel</button>
+        </form>
+        <hr>
+    </div>
+
+    <button id="logout-button-admin">Logout</button>
+
+</div>
+
+
+<script src="js/script.js"></script>
+</body>
+</html>
